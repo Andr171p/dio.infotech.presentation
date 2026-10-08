@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#222222">
+  <title>DIO Consult — ИИ в корпоративных процессах</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="viewport">
+    <main class="deck" id="deck" aria-label="Презентация DIO Consult">
+      <div class="deck-glow" aria-hidden="true"></div>
+
+      <section class="slide slide-intro active" data-slide aria-label="Слайд 1. DIO Consult и тема доклада">
+        <div class="topline"><span class="brand"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span>DIO <em>Consult</em></span><span class="mono muted">ОПЫТ КОМАНДЫ РАЗРАБОТКИ</span></div>
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> ИИ В РЕАЛЬНЫХ ПРОЦЕССАХ</span>
+            <h1>ИИ-агенты в<br><span class="accent-text">корпоративных</span><br>системах</h1>
+            <p class="intro-sub">От обучения сотрудников до управления IT-процессами</p>
+            <p class="intro-note">Разрабатываем корпоративные информационные системы и проверяем, как ИИ помогает людям выполнять конкретную работу.</p>
+          </div>
+          <div class="intro-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="intro-core">AI<span class="core-cross">✳</span></div>
+            <div class="floating-card float-dios"><span class="tiny-label">01 / РАБОТА</span><strong>DIOS</strong><small>IT-процессы и знания</small></div>
+            <div class="floating-card float-lms"><span class="tiny-label">02 / ОБУЧЕНИЕ</span><strong>AI LMS</strong><small>Курсы и сопровождение</small></div>
+          </div>
+        </div>
+        <div class="intro-bottom"><span class="line-accent"></span><span>Два продукта. Одни и те же сложные вопросы к корпоративному ИИ.</span></div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 2. Два продукта">
+        <div class="slide-head"><span class="kicker">01 / ОТКУДА ОПЫТ</span><h2>Два продукта — две точки входа для ИИ</h2><p>В обоих случаях ИИ появился там, где человеку не хватает времени на поиск, сбор контекста и сопровождение.</p></div>
+        <div class="products-grid">
+          <article class="product-card glass">
+            <div class="product-top"><span class="product-index">01</span><span class="product-symbol">↗</span></div>
+            <h3>DIOS</h3><p class="product-desc">Экосистема сервисов для управления IT-процессами.</p>
+            <div class="card-rule"></div>
+            <span class="card-label">ЗАЧЕМ ПОЯВИЛСЯ ИИ</span><p>После создания обращения заказчик теряет картину происходящего, а специалист собирает контекст по разным системам.</p>
+            <div class="role-line"><span>Роль ИИ</span><strong>Понять заявку, найти опыт, помочь с решением</strong></div>
+          </article>
+          <article class="product-card glass lms-card">
+            <div class="product-top"><span class="product-index">02</span><span class="product-symbol">✳</span></div>
+            <h3>AI LMS</h3><p class="product-desc">Платформа для создания и прохождения образовательных программ.</p>
+            <div class="card-rule"></div>
+            <span class="card-label">ЗАЧЕМ ПОЯВИЛСЯ ИИ</span><p>Эксперт знает предмет, но подготовка курса и поддержка каждого студента требуют отдельной методической работы.</p>
+            <div class="role-line"><span>Роль ИИ</span><strong>Помочь автору и сопровождать студента</strong></div>
+          </article>
+        </div>
+        <div class="slide-takeaway"><span class="takeaway-icon">→</span> Разные продукты привели нас к похожим инженерным вопросам.</div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 3. Сценарий DIOS">
+        <div class="slide-head compact"><span class="kicker">02 / DIOS</span><h2>Помощь начинается с контекста заявки</h2><p>Когда задач и знаний становится много, специалисту всё сложнее вручную собрать полную картину.</p></div>
+        <div class="dios-grid">
+          <div class="flow-panel glass">
+            <div class="flow-step"><span>01</span><p>Пользователь создаёт обращение</p></div>
+            <div class="flow-step"><span>02</span><p>ИИ анализирует контекст и похожие случаи</p></div>
+            <div class="flow-step"><span>03</span><p>Предлагает шаги и показывает зависимости</p></div>
+            <div class="flow-step"><span>04</span><p>Специалист решает задачу с ассистентом</p></div>
+            <div class="flow-step"><span>05</span><p>Новый опыт возвращается в знания</p></div>
+          </div>
+          <div class="dios-demo">
+            <div class="screenshot-wrap glass">
+              <div class="media-top"><span class="media-live"></span> ФРАГМЕНТ DIOS AI <span class="media-meta">ПЕРСОНАЛЬНЫЕ ДАННЫЕ СКРЫТЫ</span></div>
+              <div class="screenshot-image">
+                <img src="assets/dios-ai-chat-safe.png" alt="Интерфейс DIOS AI: запрос о загруженности команды и ответ с использованием инструмента; имя сотрудника заменено на нейтральное обозначение." draggable="false">
+              </div>
+            </div>
+            <button class="demo-button" id="open-video" type="button"><span class="play-icon">▶</span><span><strong>Посмотреть короткое демо</strong><small>ИИ-чат с подключением к DIO-Desk</small></span><span class="button-arrow">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 4. Сценарий AI LMS">
+        <div class="slide-head compact"><span class="kicker">03 / AI LMS</span><h2>ИИ помогает провести курс от замысла до практики</h2><p>Эксперт отвечает за содержание и качество. ИИ берёт часть методической работы и помогает студенту в контексте курса.</p></div>
+        <div class="lms-journey">
+          <div class="journey-node glass expert"><span class="node-num">01 / ЭКСПЕРТ</span><strong>Знание предмета</strong><p>Идея, документы, презентации, заметки</p></div>
+          <div class="journey-connector"><span>→</span></div>
+          <div class="journey-node glass ai-author"><span class="node-num">02 / ИИ-ПОМОЩНИК</span><strong>Структура курса</strong><p>Уточняет замысел, готовит материалы и задания</p></div>
+          <div class="journey-connector"><span>→</span></div>
+          <div class="journey-node glass learner"><span class="node-num">03 / СТУДЕНТ</span><strong>Обучение с опорой</strong><p>Изучает материалы, выполняет практику, задаёт вопросы</p></div>
+        </div>
+        <div class="lms-bottom">
+          <div class="mentor-card glass"><span class="mentor-icon">✳</span><div><span class="card-label">ПЕРСОНАЛЬНЫЙ ИИ-МЕНТОР</span><p>Объясняет сложное, помогает с практикой и учитывает прогресс студента.</p></div></div>
+          <div class="lms-principle"><span class="quote-mark">“</span><p>ИИ не заменяет преподавателя. Он освобождает время эксперта для работы, где нужен именно эксперт.</p></div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 5. Общие проблемы">
+        <div class="slide-head"><span class="kicker">04 / ОБЩИЕ ВОПРОСЫ</span><h2>Что оказалось сложнее подключения модели</h2><p>DIOS и AI LMS работают в разных предметных областях, но сталкиваются с одними ограничениями.</p></div>
+        <div class="challenge-grid">
+          <article class="challenge glass"><span class="challenge-no">01</span><span class="challenge-icon">◷</span><h3>Память</h3><p>Как помнить старые решения и понимать, какие из них ещё действуют?</p></article>
+          <article class="challenge glass"><span class="challenge-no">02</span><span class="challenge-icon">⌘</span><h3>Подключения</h3><p>Как работать с десятками корпоративных систем без набора жёстких интеграций?</p></article>
+          <article class="challenge glass"><span class="challenge-no">03</span><span class="challenge-icon">◇</span><h3>Модели заказчика</h3><p>Что делать, если модель и данные находятся внутри закрытого контура компании?</p></article>
+          <article class="challenge glass"><span class="challenge-no">04</span><span class="challenge-icon">↺</span><h3>Долгие задачи</h3><p>Как продолжать работу агента после ожидания, сбоя или ответа человека?</p></article>
+        </div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 6. Подходы к решению">
+        <div class="slide-head compact"><span class="kicker">05 / НАШ ПОДХОД</span><h2>Четыре опоры для корпоративного ИИ</h2><p>Каждый подход начинается с простого вопроса: кто владеет данными, действием и результатом?</p></div>
+        <div class="approach-grid">
+          <article class="approach glass"><span class="approach-number">01 / ПАМЯТЬ</span><h3>Храним смысл, не копию заявки</h3><div class="mini-diagram"><span>Решение + источник</span><b>→</b><span>Актуальный статус из ITSM</span></div><p>В памяти остаются причина, принятое решение, дата и ссылка на первичный объект.</p></article>
+          <article class="approach glass"><span class="approach-number">02 / ПОДКЛЮЧЕНИЯ</span><h3>Возможности публикует сам продукт</h3><div class="mini-diagram"><span>CRM · ITSM · 1С</span><b>→</b><span>Общий интерфейс для ИИ</span></div><p>Система сама знает свою бизнес-логику. Один из вариантов общего интерфейса — MCP.</p></article>
+          <article class="approach glass"><span class="approach-number">03 / МОДЕЛЬ</span><h3>Вычисление ближе к данным</h3><div class="mini-diagram"><span>Задача</span><b>→</b><span>Контур заказчика</span><b>→</b><span>Результат</span></div><p>Выбор модели зависит от задачи и ограничений компании; данные не всегда нужно выносить наружу.</p></article>
+          <article class="approach glass"><span class="approach-number">04 / АГЕНТ</span><h3>Долгая работа — видимый процесс</h3><div class="mini-diagram"><span>Шаг</span><b>→</b><span>Ожидание / повтор</span><b>→</b><span>Результат</span></div><p>Сохраняем состояние и историю действий. Пользователь ставит задачу и возвращается к готовому результату.</p></article>
+        </div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 7. Память корпоративного ИИ">
+        <div class="slide-head compact"><span class="kicker">06 / ОТДЕЛЬНО О ПАМЯТИ</span><h2>Память ИИ: что помнить и кому показывать</h2><p>Знание должно быть доступно тем, кому оно нужно, и не переживать собственную актуальность.</p></div>
+        <div class="memory-scopes">
+          <article class="scope glass"><span class="scope-symbol">◎</span><span class="card-label">ЛИЧНАЯ</span><h3>Рабочий контекст</h3><p>Предпочтения человека и текущие задачи.</p></article>
+          <article class="scope glass"><span class="scope-symbol">◈</span><span class="card-label">КОМАНДА / ПРОЕКТ</span><h3>Общие решения</h3><p>Договорённости, история проекта, полезные находки.</p></article>
+          <article class="scope glass"><span class="scope-symbol">✳</span><span class="card-label">ОРГАНИЗАЦИЯ</span><h3>Корпоративное знание</h3><p>Стандарты и правила, доступные по ролям.</p></article>
+        </div>
+        <div class="memory-example glass"><span class="example-label">ПРИМЕР</span><div class="example-fact">«Сбой вызвало исчерпание пула соединений»<small>Источник: обращение #12345 · дата решения</small></div><span class="example-arrow">→</span><div class="example-live">«Что с обращением сейчас?»<small>Текущий статус берём из системы-владельца</small></div></div>
+        <div class="memory-question">Ключевой вопрос: <strong>кто вправе прочитать конкретное воспоминание?</strong></div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 8. Открытые вопросы">
+        <div class="slide-head compact"><span class="kicker">07 / ОТКРЫТЫЕ ВОПРОСЫ</span><h2>Что мы пока учимся решать</h2><p>Для корпоративного агента недостаточно, чтобы пользователю просто понравился ответ.</p></div>
+        <div class="open-grid">
+          <article class="open-card glass"><span>01</span><h3>Актуальность памяти</h3><p>Как понять, что прежнее решение больше не действует?</p></article>
+          <article class="open-card glass"><span>02</span><h3>Граница автономии</h3><p>Когда агент может действовать сам, а когда нужен специалист?</p></article>
+          <article class="open-card glass"><span>03</span><h3>Выбор инструментов</h3><p>Как выбрать нужные функции среди сотен доступных?</p></article>
+          <article class="open-card glass"><span>04</span><h3>Объяснимость</h3><p>Как восстановить ход работы и понять причину решения?</p></article>
+          <article class="open-card glass"><span>05</span><h3>Оценка результата</h3><p>Помогло ли решение заявки? Освоил ли студент материал?</p></article>
+        </div>
+        <div class="metric-line"><span>МЕТРИКА УСПЕХА</span><strong>Не красивый текст, а результат процесса.</strong></div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 9. Дальнейшее развитие">
+        <div class="slide-head compact"><span class="kicker">08 / КУДА ДВИГАЕМСЯ</span><h2>Соединить работу, опыт и обучение</h2><p>DIOS и AI LMS замыкают один цикл: полезный опыт из работы становится доступным следующему специалисту.</p></div>
+        <div class="knowledge-loop glass"><div class="loop-node"><span>01</span><strong>Работа в DIOS</strong><small>Заявки и решения</small></div><i>→</i><div class="loop-node"><span>02</span><strong>Полученный опыт</strong><small>Причины и выводы</small></div><i>→</i><div class="loop-node"><span>03</span><strong>Общие знания</strong><small>Память команды</small></div><i>→</i><div class="loop-node"><span>04</span><strong>Обучение в AI LMS</strong><small>Курсы и практика</small></div><i>→</i><div class="loop-node"><span>05</span><strong>Новая работа</strong><small>Лучше подготовленный специалист</small></div></div>
+        <div class="roadmap-grid"><div><span class="roadmap-dot"></span><strong>Общая память</strong><small>для человека, команды и организации</small></div><div><span class="roadmap-dot"></span><strong>Открытые подключения</strong><small>к возможностям корпоративных систем</small></div><div><span class="roadmap-dot"></span><strong>Выбор модели</strong><small>под задачу и ограничения данных</small></div><div><span class="roadmap-dot"></span><strong>Долгие агенты</strong><small>с понятным ходом работы</small></div></div>
+      </section>
+
+      <section class="slide" data-slide aria-label="Слайд 10. Выводы">
+        <div class="slide-head compact"><span class="kicker">09 / ВЫВОДЫ</span><h2>Что мы вынесли из двух продуктов</h2></div>
+        <div class="conclusions">
+          <div class="conclusion"><span>01</span><p>Сложнее всего <strong>встроить ИИ в реальный процесс</strong>, где есть люди, сроки и ответственность.</p></div>
+          <div class="conclusion"><span>02</span><p>Память должна учитывать <strong>время, источник и права доступа</strong>. Текущее состояние хранит система-владелец.</p></div>
+          <div class="conclusion"><span>03</span><p>Подключения стоит делать <strong>переиспользуемыми</strong>, чтобы бизнес-логика не жила внутри одного ИИ-чата.</p></div>
+          <div class="conclusion"><span>04</span><p>Долгие задачи агента требуют <strong>надёжности, наблюдаемости и понятной истории действий</strong>.</p></div>
+        </div>
+        <div class="conclusion-bottom">Практическая ценность ИИ появляется там, где он помогает довести работу до результата.</div>
+      </section>
+
+      <section class="slide slide-contact" data-slide aria-label="Слайд 11. Контакты">
+        <div class="topline"><span class="brand"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span>DIO <em>Consult</em></span><span class="mono muted">НА СВЯЗИ</span></div>
+        <div class="contact-grid"><div><span class="eyebrow"><span class="eyebrow-dot"></span> ПРОДОЛЖИМ РАЗГОВОР</span><h2>Если тема близка —<br><span class="accent-text">давайте обсудим.</span></h2><p>Наши проекты, опыт внедрения ИИ и практические вопросы корпоративных процессов.</p><div class="contact-signature">Разработка и внедрение корпоративных информационных систем</div></div><div class="contact-panel glass"><span class="card-label">DIO CONSULT · ТЮМЕНЬ</span><a href="https://diocon.ru" target="_blank" rel="noopener"><small>САЙТ</small><strong>diocon.ru</strong><span>↗</span></a><a href="mailto:info@diocon.ru"><small>ПОЧТА</small><strong>info@diocon.ru</strong><span>↗</span></a><a href="tel:+73452500690"><small>ТЕЛЕФОН</small><strong>+7 (3452) 50-06-90</strong><span>↗</span></a></div></div>
+      </section>
+
+      <div class="deck-footer"><span class="footer-brand">DIO CONSULT <span>✳</span> AI В ПРОЦЕССАХ</span><div class="progress-track"><div id="progress"></div></div><span class="slide-count"><span id="current-slide">01</span> / 11</span></div>
+      <div class="nav-actions" aria-label="Управление слайдами"><button id="prev" type="button" aria-label="Предыдущий слайд">←</button><button id="next" type="button" aria-label="Следующий слайд">→</button></div>
+      <div class="key-hint" id="key-hint">← → переключить · F — полный экран</div>
+    </main>
+  </div>
+
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Демонстрация AI-чата DIO-Desk" hidden>
+    <div class="video-shell"><div class="video-header"><span>ДЕМО / ИИ-ЧАТ И DIO-DESK</span><button id="close-video" type="button" aria-label="Закрыть видео">✕</button></div><video id="demo-video" controls preload="none" playsinline src="assets/dios-ai-demo.mp4"></video><p>Видео загружено из исходного файла. Перед публичным показом проверьте его на персональные данные.</p></div>
+  </div>
+</body>
+</html>
