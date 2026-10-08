@@ -26,12 +26,6 @@ button{cursor:pointer}
 .topline .mono{font-size:13px;letter-spacing:.18em}
 .logo-mark{display:block;position:relative;width:95px;height:115px;overflow:hidden;flex:none}
 .logo-mark img{display:block;position:absolute;left:-25px;top:-15px;width:140px;height:136px;max-width:none}
-.brand{display:inline-flex;align-items:center;gap:12px;font-size:25px;font-weight:800;letter-spacing:-.065em;white-space:nowrap}
-.brand em{font-style:normal;font-weight:500;letter-spacing:-.045em}
-.brand-mark{position:relative;display:inline-block;width:26px;height:26px}
-.brand-mark i{position:absolute;left:2px;top:2px;width:15px;height:22px;background:var(--action);border-radius:10px 2px 3px 3px;transform:skewY(-11deg)}
-.brand-mark b{position:absolute;right:1px;bottom:2px;width:14px;height:18px;background:#a9a9a5;border-radius:1px 2px 8px 2px;transform:skewY(-11deg)}
-.brand-mark:after{content:"";position:absolute;right:1px;top:-1px;width:5px;height:5px;background:#c9c9c3;border-radius:50%}
 .kicker,.eyebrow{font-size:14px;font-weight:600;color:var(--action-light);letter-spacing:.13em}
 .eyebrow{display:inline-flex;align-items:center;gap:10px}
 .eyebrow-dot{width:6px;height:6px;background:var(--action-light);border-radius:50%;box-shadow:0 0 0 5px rgba(187,37,45,.13)}
