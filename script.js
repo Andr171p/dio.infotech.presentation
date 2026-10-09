@@ -3,6 +3,14 @@
   const slides = [...document.querySelectorAll('[data-slide]')];
   const progress = document.getElementById('progress');
   const counter = document.getElementById('current-slide');
+  const footerSection = document.getElementById('footer-section');
+  document.getElementById('total-slides').textContent = String(slides.length).padStart(2, '0');
+  slides.forEach((slide, position) => {
+    const page = document.createElement('span');
+    page.className = 'print-page';
+    page.textContent = `${String(position + 1).padStart(2, '0')} / ${slides.length}`;
+    slide.append(page);
+  });
   const prev = document.getElementById('prev');
   const next = document.getElementById('next');
   const modal = document.getElementById('video-modal');
@@ -24,11 +32,13 @@
       slide.setAttribute('aria-hidden', String(!active));
     });
     counter.textContent = String(index + 1).padStart(2, '0');
+    footerSection.textContent = slides[index].dataset.section;
+    deck.classList.toggle('is-light', slides[index].classList.contains('light'));
     progress.style.width = `${((index + 1) / slides.length) * 100}%`;
     prev.disabled = index === 0;
     next.disabled = index === slides.length - 1;
     history.replaceState(null, '', `#slide-${index + 1}`);
-    document.title = `${String(index + 1).padStart(2, '0')} / ${slides.length} — DIO Consult`;
+    document.title = `${String(index + 1).padStart(2, '0')} / ${slides.length} — DIOS · ДИО-Консалт`;
   }
 
   function hideVideo() {
@@ -48,8 +58,16 @@
   window.addEventListener('keydown', event => {
     if (!modal.hidden) {
       if (event.key === 'Escape') hideVideo();
+      if (event.key === 'Tab') {
+        const focusable = [...modal.querySelectorAll('button, video')];
+        const first = focusable[0], last = focusable.at(-1);
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
       return;
     }
+    if (event.target.closest('input, textarea, select, [contenteditable="true"]') || event.ctrlKey || event.altKey || event.metaKey) return;
+    if (event.key === ' ' && event.target.closest('button, a')) return;
     if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].includes(event.key)) {
       event.preventDefault(); show(index + 1);
     } else if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(event.key)) {

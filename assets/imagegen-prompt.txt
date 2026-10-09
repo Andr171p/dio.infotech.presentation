@@ -1,0 +1,5 @@
+Tool: built-in image_gen.imagegen
+Output: assets/dios-ribbon-cover.png
+Date: 2026-10-09
+
+Create a sophisticated minimal abstract background image for a corporate technology conference presentation about the DIOS service ecosystem, 16:9 landscape. Use case: stylized-concept, premium editorial 3D art. On the RIGHT 48 percent of the canvas, two elegant continuous satin ribbons, one deep vivid carmine red and one brushed silver-gray, curl into a loosely interlinked open loop structure, suggesting connected services. Restrained physically rendered materials, subtle sculptural depth, beautiful soft directional studio lighting, no glossy plastic. Dark nearly black charcoal background #17191d, seamless and absolutely empty on the LEFT 52 percent for large Russian title typography to be added later in HTML. Composition should be airy, dramatic but understated, large sculptural ribbons with a few fine luminous red edge highlights. No text, no lettering, no logos, no icons, no rectangular panels, no UI, no glowing orbs, no particles, no grids. Object confined to right half, avoid cropped top or bottom. High-end editorial conference art, not generic AI stock art.
